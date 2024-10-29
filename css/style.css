@@ -6,7 +6,6 @@
 div {
     display: flex;
     place-items: center;
-    border: solid 1px black;
     min-height: 100px;
     flex-direction: column;
     max-width: 500px;
@@ -17,16 +16,18 @@ body {
 }
 
 main {
-    display: flex;
     max-width: 80%;
     margin-inline: auto;
     min-height: 60svh;
-   
-    
+}
+
+h1 {
+    font-size: larger;
 }
 
 #divGridOne {
     background-color: red;
+    border-radius: 10px 10px 0 0;
 /*    grid-area: divgridone; */
 }
 
@@ -37,6 +38,7 @@ main {
 
 #divGridThree {
     background-color: green;
+    border-radius: 0 0 10px 10px;
 /*    grid-area: divgridthree; */
 }
 
