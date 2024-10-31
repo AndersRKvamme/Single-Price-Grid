@@ -16,8 +16,9 @@ div {
     min-height: 100px;
     flex-direction: column;
     max-width: 500px;
-    width: 275px;
+    width: 250px;
     height: 80%;
+    line-height: 150%;
 }
 
 body {
@@ -27,26 +28,42 @@ body {
 }
 
 main {
-    max-width: 80%;
-    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
     min-height: 60svh;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
-    font-size: larger;
-    color: var(--cyan1)
+    color: var(--cyan1);
+    font-size: 18px;
+    font-weight: 700;
 }
 
-#divMain {
-    font-size: 16px;   
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p {
+    font-weight: 200;
+    font-size: 12px;
 }
 
 #pDivOne {
     color: var(--yellowtext);
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 #pDivOneTwo {
     color: var(--lightgray);
+}
+
+.divCard {
+    height: 25vh;
+    width: 80vw;
 }
 
 #divGridOne {
@@ -59,7 +76,8 @@ h1 {
 
 #divGridTwo {
     background-color: var(--cyan1);
-    padding: 5%
+    padding: 5%;
+    
 /*    grid-area: divgridtwo; */
 }
 
@@ -68,6 +86,11 @@ h1 {
     padding: 5%;
     border-radius: 0 0 10px 10px;
 /*    grid-area: divgridthree; */
+}
+
+#dollar {
+    font-size: 25px;
+    font-weight: 700;
 }
 
 button {
