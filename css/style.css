@@ -23,8 +23,7 @@ div {
 body {
     width: 100vw;
     min-height: 100svh;
-    background-color:hsl(218, 22%, 67%);
-    font-family: Karla, 'Times New Roman', Times, serif;
+    background-color:hsl(218, 22%, 67%);    
 }
 
 main {
@@ -113,12 +112,25 @@ button {
     height: 50%;
     border-radius: 5px;
     margin-top: 0.6em;
-    align-self: center;    
+    align-self: center; 
+    box-shadow: 2px 3px 10px 1px hsl(0, 0%, 56%);   
+    cursor: pointer;
+    transition: 0.1s;
+}
+#pDivThree {
+    padding: 0.6em 0;
 }
 
 #pList {
     font-size: 12px;
+    padding:0.6em 0;
+    line-height: 115%;
 }
+
+button:hover {
+    border: solid hsl(71, 60%, 40%) 1.5px;
+}
+
 
 #pDivTwo,#pDivThree,#pDivDollar,#pList,#h2DivTwoThree {
     color: white;
@@ -131,25 +143,30 @@ button {
       width: 70%;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 
-      "one one"
-      "two three"
+      "join join"
+      "sub why";
+      padding: 10%;
+      margin-inline: auto;
     }
 .divCard{
     width: auto;
 }
     #divGridOne {
-        grid-area: one;
+        grid-area: join;
         width: 100%;
+        margin-top: 0px;
     }
     
     #divGridTwo {
-        grid-area: two;
+        grid-area: sub;
         width: 100%;
+        border-radius: 0 0 0 10px;
     }
     
-    #DivGridThree {
-        grid-area: three;
+    #divGridThree {
+        grid-area: why;
         width: 100%;
+        border-radius: 0 0 10px 0;
     }
 
 
