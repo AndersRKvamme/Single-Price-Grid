@@ -16,11 +16,14 @@ div {
     min-height: 100px;
     flex-direction: column;
     max-width: 500px;
+    width: 275px;
+    height: 80%;
 }
 
 body {
     min-height: 100svh;
     background-color:hsl(218, 22%, 67%);
+    font-family: Karla, 'Times New Roman', Times, serif;
 }
 
 main {
@@ -34,6 +37,10 @@ h1 {
     color: var(--cyan1)
 }
 
+#divMain {
+    font-size: 16px;   
+}
+
 #pDivOne {
     color: var(--yellowtext);
 }
@@ -43,18 +50,22 @@ h1 {
 }
 
 #divGridOne {
+    margin-top: 50px;
     background-color:white;
+    padding: 5%;
     border-radius: 10px 10px 0 0;
 /*    grid-area: divgridone; */
 }
 
 #divGridTwo {
     background-color: var(--cyan1);
+    padding: 5%
 /*    grid-area: divgridtwo; */
 }
 
 #divGridThree {
     background-color: var(--cyan2);
+    padding: 5%;
     border-radius: 0 0 10px 10px;
 /*    grid-area: divgridthree; */
 }
@@ -62,7 +73,16 @@ h1 {
 button {
     background-color: var(--yellowtext);
     color: white;
+    border: none;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
 }
+
+#pDivTwo,#pDivThree,#dollar,#pList,#h2DivTwoThree {
+    color: white;
+}
+
 
 /*          Apply this to @media
     grid-template-columns: repeat(2, minmax(100px, 1fr));

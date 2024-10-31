@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Single Price Grid Component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -24,18 +26,19 @@
       
        <p id="pDivOneTwo">Gain access to our full library of tutorials along with expert code reviews. 
         Perfect for any developers who are serious about honing their skills.</p> </div>
-      <div id="divGridTwo"> <h2 class="h2DivTwoThree">Monthly Subscription</h2>
+      <div id="divGridTwo"> 
+        <h2 id="h2DivTwoThree">Monthly Subscription</h2>
 
-        <p id="pDivDollar">&dollar;29 per month</p>
+        <p id="pDivDollar"><span id="dollar">&dollar;29</span> per month</p>
       
         <p id="pDivTwo">Full access for less than &dollar;1 a day</p> 
       
         <button>Sign Up</button>
       </div>
       <div id="divGridThree">
-        <p id="pDivThree">Why Us
+        <p id="pDivThree">Why Us</p>
 
-        Tutorials by industry experts <br>
+        <p id="pList">Tutorials by industry experts <br>
         Peer &amp; expert code review<br>
         Coding exercises<br>
         Access to our GitHub repos<br>
