@@ -17,7 +17,7 @@ div {
     max-width: 500px;
     width: 250px;
     height: 80%;
-    line-height: 150%;
+    line-height: 120%;
 }
 
 body {
@@ -63,7 +63,7 @@ p {
 }
 
 .divCard {
-    height: 25vh;
+    height: 30vh;
     width: 80vw;
 }
 
@@ -102,15 +102,21 @@ p {
     padding: 0.6em 0;
 }
 
+
+
 button {
     background-color: var(--yellowtext);
     color: white;
     border: none;
-    width: 150px;
-    height: 35px;
+    width: 80%;
+    height: 50%;
     border-radius: 5px;
-    margin-top: 25px;
+    margin-top: 0.6em;
     align-self: center;    
+}
+
+#pList {
+    font-size: 12px;
 }
 
 #pDivTwo,#pDivThree,#pDivDollar,#pList,#h2DivTwoThree {
