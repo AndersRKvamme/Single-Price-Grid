@@ -12,7 +12,6 @@
 
 div {
     display: flex;
-    place-items: center;
     min-height: 100px;
     flex-direction: column;
     max-width: 500px;
@@ -48,17 +47,19 @@ h2 {
 
 p {
     font-weight: 200;
-    font-size: 12px;
+    font-size: 16px;
+    width: 100%;
+    text-align: start;
 }
 
 #pDivOne {
     color: var(--yellowtext);
     font-weight: 700;
-    margin-bottom: 10px;
+    padding: 0.6em 0;
 }
 
 #pDivOneTwo {
-    color: var(--lightgray);
+    color: gray;
 }
 
 .divCard {
@@ -88,9 +89,17 @@ p {
 /*    grid-area: divgridthree; */
 }
 
+#pDivDollar {
+    padding: 0.6em 0;
+}
+
 #dollar {
     font-size: 25px;
     font-weight: 700;
+}
+
+#pDivTwo {
+    padding: 0.6em 0;
 }
 
 button {
@@ -100,9 +109,11 @@ button {
     width: 150px;
     height: 35px;
     border-radius: 5px;
+    margin-top: 25px;
+    align-self: center;    
 }
 
-#pDivTwo,#pDivThree,#dollar,#pList,#h2DivTwoThree {
+#pDivTwo,#pDivThree,#pDivDollar,#pList,#h2DivTwoThree {
     color: white;
 }
 
