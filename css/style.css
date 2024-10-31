@@ -14,13 +14,14 @@ div {
     display: flex;
     min-height: 100px;
     flex-direction: column;
-    max-width: 500px;
+/*    max-width: 100%;
     width: 250px;
-    height: 80%;
+    height: 80%; */
     line-height: 120%;
 }
 
 body {
+    width: 100vw;
     min-height: 100svh;
     background-color:hsl(218, 22%, 67%);
     font-family: Karla, 'Times New Roman', Times, serif;
@@ -124,10 +125,33 @@ button {
 }
 
 
-/*          Apply this to @media
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
-    grid-auto-rows: 1fr;
-    grid-template-areas: 
-    "divgridone divgridone"
-    "divgridtwo divgridthree";  
-*/
+@media only screen and (min-width: 700px) {
+    main {
+      display: grid;
+      width: 70%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      "one one"
+      "two three"
+    }
+.divCard{
+    width: auto;
+}
+    #divGridOne {
+        grid-area: one;
+        width: 100%;
+    }
+    
+    #divGridTwo {
+        grid-area: two;
+        width: 100%;
+    }
+    
+    #DivGridThree {
+        grid-area: three;
+        width: 100%;
+    }
+
+
+
+}
