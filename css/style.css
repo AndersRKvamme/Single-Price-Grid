@@ -1,3 +1,10 @@
+:root {
+    --yellowtext: hsl(71, 73%, 54%);
+    --cyan1: hsl(179, 62%, 43%); 
+    --cyan2: hsla(179, 62%, 43%, 40%);
+    --lightgray: hsl(204, 43%, 93%);
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -13,6 +20,7 @@ div {
 
 body {
     min-height: 100svh;
+    background-color:hsl(218, 22%, 67%);
 }
 
 main {
@@ -23,23 +31,37 @@ main {
 
 h1 {
     font-size: larger;
+    color: var(--cyan1)
+}
+
+#pDivOne {
+    color: var(--yellowtext);
+}
+
+#pDivOneTwo {
+    color: var(--lightgray);
 }
 
 #divGridOne {
-    background-color: red;
+    background-color:white;
     border-radius: 10px 10px 0 0;
 /*    grid-area: divgridone; */
 }
 
 #divGridTwo {
-    background-color: blue;
+    background-color: var(--cyan1);
 /*    grid-area: divgridtwo; */
 }
 
 #divGridThree {
-    background-color: green;
+    background-color: var(--cyan2);
     border-radius: 0 0 10px 10px;
 /*    grid-area: divgridthree; */
+}
+
+button {
+    background-color: var(--yellowtext);
+    color: white;
 }
 
 /*          Apply this to @media
